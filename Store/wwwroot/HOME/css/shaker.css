@@ -1,12 +1,15 @@
-.htmlshaker, .bodyshaker {
+html{
+  scrollbar-width: none;
+}
+.htmlshaker,.bodyshaker {
     position: relative;
-    height: 80%;
+    height: 82%;
   }
   .bodyshaker {
-    background: #eee;
+
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color:#000;
+    color:#FFF;
     margin: 0;
     padding: 0;
   }
@@ -18,6 +21,7 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
+   
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -33,3 +37,107 @@
     -webkit-align-items: center;
     align-items: center;
   }
+
+
+
+
+/* Card Templete */
+.card {
+  height: 100%;
+  border-radius: 0.9rem;
+  border-color: #FFF;
+  box-shadow: 1px 1px 10px #eee;
+  
+}
+
+.card a {
+  text-decoration: none
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+.change-site
+{
+  margin-top: 7px;
+}
+
+/* the title of slides*/
+
+.titlebox {
+  display:table;
+  width:100%;
+/*    outline:1px dotted red;  /* TEST Outline */
+}
+.titlebox span {
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  font-size:1.5em;
+  font-weight:bold;
+  font-family:Verdana,sans-serif;
+  white-space:nowrap;
+  padding:.125em .375em;
+}
+.titlebox::before,
+.titlebox::after {
+  content:"";
+  display:table-cell;
+  width:50%;
+/*    outline:1px solid lime;  /* TEST Outline */
+  vertical-align:middle;
+/*    background:url("imgs/reddot3.png") repeat-x 0 49%;  /* can use a background image, if preferred */
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(45%, rgba(0,0,0,0)), color-stop(46%, rgba(0,0,255,1)), color-stop(54%, rgba(0,0,255,1)), color-stop(55%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));  /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 54%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%);    /* Chrome10+,Safari5.1+ */
+  background:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(180,180,180,1) 46%, rgba(180,180,180,1) 54%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%);    /* FF3.6+ */
+background:-ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 54%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%);    /* IE10+ */
+  background:-o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 54%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%);    /* Opera 11.10+ */
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(180,180,180,1) 46%, rgba(180,180,180,1) 54%, rgba(0,0,0,0) 55%), rgba(0,0,0,0) 100%);    /* W3C */
+}
+
+.change-btn
+{
+  color: white;
+  background-color: #dc3545;
+}
+
