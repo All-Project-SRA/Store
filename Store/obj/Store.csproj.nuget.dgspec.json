@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Store\\Store\\Store.csproj": {}
+    "D:\\MyProjects\\Githup\\Store\\Store\\Store.csproj": {}
   },
   "projects": {
-    "F:\\Store\\Store\\Store.csproj": {
+    "D:\\MyProjects\\Githup\\Store\\Store\\Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Store\\Store\\Store.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Githup\\Store\\Store\\Store.csproj",
         "projectName": "Store",
-        "projectPath": "F:\\Store\\Store\\Store.csproj",
-        "packagesPath": "C:\\Users\\..Shaker\\.nuget\\packages\\",
-        "outputPath": "F:\\Store\\Store\\obj\\",
+        "projectPath": "D:\\MyProjects\\Githup\\Store\\Store\\Store.csproj",
+        "packagesPath": "C:\\Users\\AnAs\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProjects\\Githup\\Store\\Store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\..Shaker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AnAs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,6 +25,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
