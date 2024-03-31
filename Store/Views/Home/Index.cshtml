@@ -1,5 +1,11 @@
 ﻿
 @model Store.ViewModels.HomeViewModels
+@{
+
+    
+
+}
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -12,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
+    <title> Store Project </title>
 
     <!-- Favicon -->
     <link rel="icon" href="~/HOME/img/favicon.png">
@@ -44,7 +50,8 @@
     <link rel="stylesheet" href="~/HOME/css/style.css">
     <link rel="stylesheet" href="~/HOME/css/responsive.css">
 
-    <link rel="stylesheet" href="~/HOME/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="~/HOME/css/shaker.css">
 </head>
 <body>
@@ -82,30 +89,9 @@
     <!-- Header Area -->
     <header class="header">
         <!-- Topbar -->
-        <div class="topbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-12">
-                        <!-- Contact -->
-                        <ul class="top-link">
-                            <li><a href="#">الصفحة الرئيسية</a></li>
-                            <li><a href="#">منتجاتنا</a></li>
-                            <li><a href="#">تواصل معنا</a></li>
-                            <li><a href="#">حول الموقع</a></li>
-                        </ul>
-                        <!-- End Contact -->
-                    </div>
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <!-- Top Contact -->
-                        <ul class="top-contact">
-                            <li><i class="fa fa-phone"></i>+963 938 350 459</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">MyEmail@noemail.com</a></li>
-                        </ul>
-                        <!-- End Top Contact -->
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+            @{await Html.RenderPartialAsync("_Header");}
+       
         <!-- End Topbar -->
         <!-- Header Inner -->
         <div class="header-inner">
@@ -128,36 +114,36 @@
                                 <nav class="navigation">
                                     <ul class="nav menu">
 
-                                        
+
                                         @foreach (var item in @Model.Categorie_data())
-                                    	{
-		 
+                                        {
 
 
-                                      	
+
+
 
 
                                             <li>
                                                 <a href="#">  @item.Name   <i class="icofont-rounded-down"></i></a>
 
-                                               
+
                                                 <ul class="dropdown">
-                                                 
-                                                        @foreach (var item_m in item.Catgories_M)
-                                                        {
+
+                                                    @foreach (var item_m in item.Catgories_M)
+                                                    {
 
 
-                                                            <li><a href="index.html"> @item_m.Name </a></li>
+                                                        <li><a href="index.html"> @item_m.Name </a></li>
 
-                                                        }
+                                                    }
 
 
                                                 </ul>
 
-                                                </li>
+                                            </li>
 
-                                        
-                                            }
+
+                                        }
 
 
                                     </ul>
@@ -565,7 +551,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/blog-sidebar1.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -587,7 +573,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/blog-sidebar2.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -609,7 +595,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/blog-sidebar3.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -631,7 +617,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/author1.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -653,7 +639,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/blog2.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -675,7 +661,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/blog3.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -697,7 +683,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/author3.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -719,7 +705,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <div class="image"><img src="~/HOME/img/author2.jpg" alt="#" /></div>
+                            <div class="image"><img src="~/HOME/img/blog1.jpg" alt="#" /></div>
                             <div class="content">
                                 <a href="#">
                                     <span class="title">
@@ -1275,7 +1261,6 @@
 
 
     <!--/ نهاية السلايدات -->
-
     <!-- Start service -->
     <!-- <section class="services section">
         <div class="container">
@@ -1791,8 +1776,7 @@
     <!-- Magnific Popup JS -->
     <script src="~/HOME/js/jquery.magnific-popup.min.js"></script>
     <!-- Counter Up CDN JS -->
-    <script src="~/HOME/js/waypoints.min.js"></script>
-  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="~/HOME/js/bootstrap.min.js"></script>
     <!-- Main JS -->
@@ -1801,64 +1785,64 @@
 
     <script src="~/HOME/js/swiper-bundle_2.min.js"></script>
     <script>
-      function onResize() {
-        var wid = window.innerWidth;
-        if (wid >= 1200) {
-          var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 4,
-            spaceBetween: 40,
-            slidesPerGroup: 4,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        } else if (wid < 1200 && wid >= 800) {
-          var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        } else {
-          var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            slidesPerGroup: 2,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
+        function onResize() {
+            var wid = window.innerWidth;
+            if (wid >= 1200) {
+                var swiper = new Swiper(".swiper-container", {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    slidesPerGroup: 4,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            } else if (wid < 1200 && wid >= 800) {
+                var swiper = new Swiper(".swiper-container", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    slidesPerGroup: 3,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            } else {
+                var swiper = new Swiper(".swiper-container", {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    slidesPerGroup: 2,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            }
         }
-      }
-      var doit;
-      doit = setTimeout(onResize, 400);
-      window.onresize = function () {
-        clearTimeout(doit);
+        var doit;
         doit = setTimeout(onResize, 400);
-      };
+        window.onresize = function () {
+            clearTimeout(doit);
+            doit = setTimeout(onResize, 400);
+        };
     </script>
 
 </body>

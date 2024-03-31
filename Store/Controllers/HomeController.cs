@@ -29,5 +29,22 @@ namespace Store.Controllers
 
 
         }
+        public IActionResult Login()
+        {
+            
+            return View();
+
+
+        }/*
+        [HttpPost]
+
+        public IActionResult Login()
+        {
+
+            return View();
+
+
+        }
+        */
     }
 }
