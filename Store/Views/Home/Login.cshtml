@@ -4,24 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
+    <link rel="stylesheet" href="~/Home/login/login.css" />
     <link href="~/HOME/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/HOME/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/HOME/css/responsive.css">
-    <link rel="stylesheet" href="~/HOME/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/Home/login/login.css" />
-
-
-
 </head>
 <body>
     <header class="header">
         @{await Html.RenderPartialAsync("_Header");}
         </header>
-        <form action="" class="form123">
+        <form action="">
             <h2>Login</h2>
-            <input class="userName input123" type="text" placeholder="User Name" />
-            <input class="password input123" type="password" placeholder="Password" />
-            <input class="buttonSend input123" type="button" value="Login" />
+            <input class="userName" type="text" placeholder="User Name" />
+            <input class="password" type="password" placeholder="Password" />
+            <input class="buttonSend" type="button" value="Login" />
         </form>
 </body>
 </html>
