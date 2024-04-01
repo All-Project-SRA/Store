@@ -8,16 +8,19 @@
     <link href="~/HOME/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/HOME/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/HOME/css/responsive.css">
+    <link rel="stylesheet" href="~/HOME/css/font-awesome.min.css">
+
+
 </head>
 <body>
     <header class="header">
         @{await Html.RenderPartialAsync("_Header");}
         </header>
-        <form action="">
-            <h2>Login</h2>
+        <form action="" method="post">
+            <h2> Login</h2>
             <input class="userName" type="text" placeholder="User Name" />
             <input class="password" type="password" placeholder="Password" />
-            <input class="buttonSend" type="button" value="Login" />
+            <button class="buttonSend" type="submit" value="Login" /> Login
         </form>
 </body>
 </html>
