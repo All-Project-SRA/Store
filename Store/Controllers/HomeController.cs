@@ -69,7 +69,7 @@ namespace Store.Controllers
                 if (result.Succeeded)
                 {
 
-                    return View("index");
+                  return View("index");
                 }
                 return View();
 
